@@ -1,4 +1,3 @@
-import json
 from datetime import datetime
 import tkinter as tk
 from tkinter import messagebox, simpledialog
@@ -33,7 +32,7 @@ class Eczane:
             if datetime.strptime(ilac.son_kullanma_tarihi, "%Y-%m-%d").date() <= bugun
         ]
 
-# Eczane oluştur ve sabit ilaçları ekle
+
 eczane = Eczane()
 eczane.ilac_listesi = [
     Ilac("Parol", "1000000001", "Abdi İbrahim", 15.50, 100, "2025-05-15"),
@@ -69,7 +68,7 @@ eczane.ilac_listesi = [
    
 ]
 
-# Tkinter Arayüzü
+
 def ilaclari_listele():
     listbox.delete(0, tk.END)
     for ilac in eczane.ilaclari_goster():
@@ -107,7 +106,7 @@ def son_kullanma_kontrolu():
     else:
         messagebox.showinfo("Son Kullanma Tarihi", "Tüm ilaçlar güncel.")
 
-# Ana pencere
+
 root = tk.Tk()
 root.title("Eczane Yönetim Sistemi")
 
@@ -137,6 +136,6 @@ btn_stok_kontrol.grid(row=0, column=2, padx=5)
 btn_son_kullanma = tk.Button(btn_frame, text="Son Kullanma Tarihi Kontrolü", command=son_kullanma_kontrolu)
 btn_son_kullanma.grid(row=0, column=3, padx=5)
 
-# Programı başlat
+
 ilaclari_listele()
 root.mainloop()
