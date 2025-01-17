@@ -8,8 +8,8 @@ Bu proje, eczanelerin ilaç envanterlerini yönetebilmeleri için bir masaüstü
 - Yeni İlaç Ekleme: İlaç adı, barkod, üretici, fiyat, stok ve son kullanma tarihi gibi bilgileri kullanarak yeni ilaç ekleyebilirsiniz.
 - Kritik Stok Kontrolü: Belirli bir stok seviyesinin altındaki ilaçları listeleyebilirsiniz.
 - Son Kullanma Tarihi Kontrolü: Son kullanma tarihi geçmiş veya yaklaşan ilaçları görüntüleyebilirsiniz.
-- Fiyat Analizi: En ucuz, en pahalı ve ortalama fiyat bilgilerini analiz edebilirsiniz.
-- Veri Kaydetme ve Yükleme: İlaç bilgilerini JSON dosyası olarak kaydedebilir ve daha sonra yükleyebilirsiniz.
+
+
 
  Kurulum
 
